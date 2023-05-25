@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+}
+
+header {
+    background-color: blue;
+    color: white;
+}
+
+footer {
+    background-color: green;
+    color: yellow;
+}
+
+main {
+    /* position:fixed; */
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    color: aqua;
+    height: calc(100vh - 52px);
+}
+
+aside {
+    width: 50%;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}

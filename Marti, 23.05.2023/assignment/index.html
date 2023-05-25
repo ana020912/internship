@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <!-- Text section -->
+    <section>
+        <p> <u>Lorem ipsum dolor sit amet consectetur adipisicing elit.</u>  
+            <strong>Blanditiis neque deleniti quas fugit.</strong>  Veniam perferendis a debitis earum deserunt, neque possimus harum ullam voluptatem 
+            <i> vero consequuntur minus magni ratione minima?</i>
+        </p>
+    
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Guitar">Guitar</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Piano">Piano</a></li>
+        </ul>
+
+        <ol>
+            <li> <a href="https://www.intel.com/content/www/us/en/homepage.html">Intel</a> </li>
+            <li> <a href="https://www.amd.com/en.html">AMD</a> </li>
+        </ol>
+    </section>
+
+    <!-- Form section -->
+    <section>
+        <form action="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">
+            <div>
+                <label for="some-text">Text:</label>
+                <input id="some-text" type="text" placeholder="Say something..." required />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Enter your email..." required />
+            </div>
+            
+            <div>
+                <label for="password">Password:</label>
+                <input id="password" type="password" placeholder="Enter your password..." required />
+            </div>
+           <textarea name="textarea" id="text-area" cols="30" rows="10"></textarea> <!--inline element -->
+           <label for="select-option">Select one of the following options:</label>
+           <select name="select-option" id="select-option">
+                <option value="Coffee">Coffee</option>
+                <option value="Tea">Tea</option>
+           </select>
+           <input type="submit" value="Submit">
+        </form>
+    </section>
+
+   
+    <!-- Table section -->
+    <section>
+       
+        <table style="border: 1px solid black">
+            <thead>
+                <tr>
+                  <th >Month</th>
+                  <th>Savings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>January</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>February</td>
+                  <td>$80</td>
+                </tr>
+                <tr>
+                    <td>March</td>
+                    <td>$50</td>
+                  </tr>
+                  <tr>
+                    <td>April</td>
+                    <td>$200</td>
+                  </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sum</td>
+                  <td>$430</td>
+                </tr>
+              </tfoot>
+        </table>
+    </section>
+    
+    <!-- Media section -->
+    <section style="background-color: purple;">
+        <img src="./images/pxfuel.com.jpg" alt="minion image" style="width: 500px;">
+        <img src="https://live.staticflickr.com/3409/3206120815_6137d268f7_w.jpg" alt="tom&jerry">
+        <img style="width:400px; height: 300px;" src="https://live.staticflickr.com/2095/2057894449_d4f870e744_b.jpg" alt="scooby-doo">
+        <iframe src="https://www.youtube.com/embed/Cf2WckMuVNU" title="Figaro"></iframe>
+    </section>
+    
+    <script src="./scripts/script.js" type=""></script>
+</body>
+</html>
