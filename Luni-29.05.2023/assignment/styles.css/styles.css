@@ -1,0 +1,127 @@
+* {
+ margin: 0;
+ padding: 0;
+ text-decoration: none;
+ font-family: 'Roboto Flex', sans-serif;
+ 
+}
+
+body {
+    background-color: #faf4f0;
+}
+
+.gradient {
+    background-image: url('/images/mesh-gradient-5.png');
+    width: 80%;
+    height: 200px;
+    z-index: -1;
+}
+/* STATUS BAR */
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+}
+
+section img {
+   position: absolute;
+   top: 60px;
+   left: 15px;
+}
+/* TITLE */
+.title {
+    /* margin-top: 60px; */
+    margin-bottom: calc(334px - 202px);
+}
+
+h1 {
+    font-weight: 800px;
+    font-size: 48px;
+    line-height: 56px;
+    font-size: 3em;
+}
+
+p {
+    color: #5F646D;
+}
+
+/* FORM */
+
+form {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-weight: 700;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+input {
+   box-sizing: border-box;
+}
+
+#email {
+    background-image: url('../images/mail_icon.png');
+    background-repeat: no-repeat;
+    background-position: calc(272px - 34px);
+}
+
+#email::placeholder, #password::placeholder {
+    padding-left: 20px;
+}
+
+#password {
+    background-image: url('../images/password_icon.png');
+    background-repeat: no-repeat;
+    background-position: calc(272px - 34px);
+}
+input:not([type='checkbox']), button {
+    height: 50px;
+    width: 272px;
+}
+
+[type='checkbox'] {
+    /* height: 100%; */
+}
+
+[type='submit'] {
+    background-color: #ae7aff;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 1px black;
+    font-weight: 700;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* SEPARATOR */
+.separator {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+}
+
+hr {
+    border-style: solid none none none;
+    color: black;
+    border-width: 1px;
+    width: 109px;
+    transform: translate(0,50%);
+}
