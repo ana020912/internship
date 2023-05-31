@@ -52,12 +52,12 @@ body {
 
 /* STATUS BAR */
 
-[alt='status_bar'] {
+/* [alt='status_bar'] {
     position: absolute;
     top: 0;
     left: 0;
-    width: 320px;
-}
+    width: 100%;
+} */
 
 [alt='logo'] {
     display: none;
@@ -316,4 +316,98 @@ div > p {
         top: 850px;
     }
     
+}
+
+/* ######### CONTACTS ############# 
+
+
+*/
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.search-section {
+    /* background-color: green; */
+    padding-top: 42px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 24px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 800;
+    align-self: center;
+}
+
+
+ul {
+    /* background-color: red; */
+    list-style-type: none;
+    /* margin-top: 86px; */
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+}
+ 
+.active{
+    /* color: white; */
+    background-color: black;
+} 
+
+.active a {
+    color: white;
+}
+
+li {
+    font-size: 12px;
+    font-weight: 700;
+    width: 33.3%;
+    padding: 11px;
+    /* background-color: green; */
+    text-align: center;  
+}
+
+table {
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+table, tr {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+td img {
+    margin-right: 2px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid black;
+    
+}
+
+footer img {}
+    align-self: center;
 }
