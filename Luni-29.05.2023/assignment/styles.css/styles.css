@@ -323,12 +323,20 @@ div > p {
 
 */
 
-.contacts-wrapper {
+.layout {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
 }
+@media screen and (min-width: 768px) {
+    .layout {
+        flex-direction: row;
+    }   
+}
+
+/* SEARCH SECTION */
 
 .search-section {
     /* background-color: green; */
@@ -339,12 +347,46 @@ div > p {
     margin-bottom: 24px;
 }
 
+@media screen and (min-width: 768px) {
+    section img {
+        display: none;
+    }
+}
+
 h4 {
     font-size: 24px;
     font-weight: 800;
     align-self: center;
 }
 
+h4:nth-child(2) {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    h4:nth-child(2) {
+        display: block;
+    }
+
+    h4:first-child {
+        display: none;
+    }
+}
+/*CONTACTS - WRAPPER */
+
+.contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+@media screen and (min-width: 768px) {
+    .contacts-wrapper {
+        width: 80%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    
+}
 
 ul {
     /* background-color: red; */
@@ -398,16 +440,52 @@ td img {
 }
 
 footer {
+    /* background-color: firebrick; */
     position: fixed;
     bottom: 0;
-    padding: 20px;
+    padding: 20px 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
     border-top: 1px solid black;
     
 }
+@media screen and (min-width: 768px) {
+    footer {
+        display: none;
+    }
+}
 
-footer img {}
+
+footer img {
     align-self: center;
+}
+
+/* TABLET COMPONENTS */
+
+aside {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    aside {
+        display: block;
+        width:20%;
+        height:100%;
+        background-color: black;
+    }
+}
+
+.options {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .options {
+        /* background-color: red; */
+        /* display: block; */
+        display: flex;
+    }
+    
+    div img {
+        display: inline;
+    }
 }
