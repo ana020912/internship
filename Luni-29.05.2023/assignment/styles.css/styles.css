@@ -319,10 +319,7 @@ div > p {
 }
 
 /* ################## CONTACTS ########################## 
-
-
 */
-
 
 .layout {
     /* background-color: aqua; */
@@ -391,6 +388,10 @@ h4:nth-child(2) {
 .options {
     display: none;
 }
+
+.actions-btn, .sort-btn {
+    display: none;
+}
 @media screen and (min-width: 768px) {
     .options {
         display: flex;
@@ -413,7 +414,34 @@ h4:nth-child(2) {
     button::before {
         content: url('../images/contact-images/add.svg');
         align-content: center;
+        margin-right: 3px;
+    }
+
+    .filters {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filters div {
+        display: flex;
+        gap: 10px;
+    }
+    .sort-btn, .actions-btn {
+        background-color: inherit;
+        display: block;
+    }
+
+    .sort-btn::before {
+        content: url('../images/contact-images/sort-icon.svg');
+        align-content: center;
         margin-right: 6px;
+    }
+
+    .actions-btn::before {
+        content: url('../images/contact-images/actions-icon.svg');
+        align-content: center;
+        margin-right: 6px;
+        margin-top: -3px;
     }
 }
 
@@ -422,7 +450,6 @@ h4:nth-child(2) {
 .contacts-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 20px;
 }
 @media screen and (min-width: 768px) {
