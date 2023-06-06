@@ -13,7 +13,6 @@
     <div class='layout'>
 
         <aside>
-           
             <nav>
                 <img src="./images/contact-images/aside-images/menu.svg" alt="menu">
                 <img src="./images/contact-images/aside-images/time.svg" alt="">
@@ -24,7 +23,7 @@
                 <img src="./images/contact-images/aside-images/calendar.svg" alt="">
                 <img src="./images/contact-images/aside-images/mail.svg" alt="">
             </nav>
-           
+
             <div class="profiles">
                 <img src="./images/contact-images/aside-images/profile-pic.svg" alt="">
                 <img src="./images/contact-images/aside-images/profile-pic.svg" alt="">
@@ -46,7 +45,7 @@
                         <button>Create New</button>
                     </div>
                 </section>
-                
+
                 <div class="filters">
                     <ul>
                         <li class="active"><a href="#">All Contacts</a></li>
@@ -59,43 +58,54 @@
                         <button class="actions-btn">Bulk Actions</button>
                     </div>
                 </div>
-               
 
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Service</th>
-                        <th>Status</th>
-                    </tr>
-                    <tr>
-                        <td> <span>Darius Cummings</span> <br> <span>balchem@msn.com</span>  </td>
-                        <td>balchem@msn.com</td>
-                        <td>cv</td>
-                        <td>
-                            <img src="./images/contact-images/online-status.svg" alt="online-status">
-                            Online
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <span>Sampson Totton</span> <br> <span>claypool@comcast.net</span> </td>
-                        <td>claypool@msn.com</td>
-                        <td>cv</td>
-                        <td>
-                            <img src="./images/contact-images/away-status.svg" alt="away-status">
-                            Away
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> <span>Sampson Totton</span> <br>  <span>claypool@comcast.net</span></td>
-                        <td>claypool@msn.com</td>
-                        <td>cv</td>
-                        <td>
-                            <img src="./images/contact-images/offline-status.svg" alt="away-status">
-                            Offline
-                        </td>
-                    </tr>
-                </table>
+
+                <section class="contacts-table">
+                    <div class="table-head">
+                        <ul class="table-list-style">
+                            <li>
+                                <input type="checkbox">
+                            </li>
+                            <li>
+                                Name
+                                <img src="./images/contact-images/sort-down-arrow.svg" alt="">
+                            </li>
+                            <li>
+                                Email
+                                <img src="./images/contact-images/sort-down-arrow.svg" alt="">
+                            </li>
+                            <li>
+                                Service
+                                <img src="./images/contact-images/sort-down-arrow.svg" alt="">
+                            </li>
+                            <li>
+                                Status
+                                <img src="./images/contact-images/sort-down-arrow.svg" alt="">
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+                    <div class="table-body">
+                        <ul class="table-list-style">
+                            <li><input type="checkbox"></li>
+                            <li>Darius Cummings</li>
+                            <li>balchen@msn.com</li>
+                            <li>Development</li>
+                            <li>Online</li>
+                            <li>...</li>
+                        </ul>
+
+                        <ul class="table-list-style">
+                            <li><input type="checkbox"></li>
+                            <li>Daeerius Cummings</li>
+                            <li>balchen@msn.com</li>
+                            <li>Development</li>
+                            <li>Online</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                </section>
 
                 <section class="page-counter">
                     <div class="preview">
@@ -109,7 +119,6 @@
                     </div>
                 </section>
             </div>
-
             <footer>
                 <div class="mobile-options">
                     <img src="./images/contact-images/time.svg" alt="time">
@@ -118,7 +127,7 @@
                     <img src="./images/contact-images/buy.svg" alt="buy">
                     <img src="./images/contact-images/others.svg" alt="others">
                 </div>
-                
+
                 <div class="tablet-options">
                     <div class="info">
                         <ul>
@@ -128,15 +137,22 @@
                             <li>API</li>
                         </ul>
                     </div>
-    
+
                     <div class="view-mode">
-                        <img src="./images/contact-images/light-mode.svg" alt="light">
-                        <img src="./images/contact-images/dark-mode.svg" alt="">
+                        <button>
+                            <img src="./images/contact-images/light-mode.svg" alt="light">
+                        </button>
+                        
+                        <button>
+                            <img src="./images/contact-images/dark-mode.svg" alt="">
+                        </button>
+                      
                     </div>
                 </div>
             </footer>
         </main>
     </div>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
