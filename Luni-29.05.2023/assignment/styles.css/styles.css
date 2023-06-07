@@ -336,8 +336,17 @@ div > p {
 
 main {
     /* background-color: green; */
+    /* display: flex;
+    flex-direction: column; */
     width: 100%;
     height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        position: relative;
+        min-height: 100vh;
+    }
 }
 
 /* SEARCH SECTION */
@@ -402,7 +411,7 @@ h4:nth-child(2) {
         display: inline;
     }
 
-    .optionbutton {
+    .options button {
         line-height: 16px;
         font-size: 12px;
         font-weight: 700;
@@ -413,8 +422,9 @@ h4:nth-child(2) {
 
     .options button::before {
         content: url('../images/contact-images/add.svg');
-        align-content: center;
-        margin-right: 3px;
+        position: relative;
+        top: 2px;
+        margin-right: 5px;
     }
 
     .filters {
@@ -428,6 +438,8 @@ h4:nth-child(2) {
         gap: 10px;
     }
     .sort-btn, .actions-btn {
+        width: 130px;
+        height: 36px;
         background-color: inherit;
         display: block;
     }
@@ -449,6 +461,7 @@ h4:nth-child(2) {
 /*CONTACTS - WRAPPER */
 
 .contacts-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -456,9 +469,9 @@ h4:nth-child(2) {
 @media screen and (min-width: 768px) {
     .contacts-wrapper {
         width: 85%;
-        /* height: 100%; */
         justify-content: flex-start;
         margin: 17px auto 0;
+        position: relative;
     }
     
 }
@@ -500,14 +513,22 @@ ul {
 /* ########## CONTACTS TABLE ######### */
 
 @media screen and (max-width: 767px) {
-    .contacts-table {
+    .table-head, .name, .e-mail, .checkbox {
         display: none;
     }
-    
+}
+
+.mobile-info-display {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-info-display {
+        display: none;
+    }
 }
 .contacts-table {
     width: 100%;
-    background-color: rgb(122, 24, 24);
 }
 
 
@@ -520,7 +541,6 @@ ul {
 }
 
 .table-list-style li {
-    background-color: magenta;
     align-self: center;
     font-size: 12px;
     font-weight: 700;
@@ -532,8 +552,16 @@ ul {
 }
 
 .table-body {
-    background-color: blue;
     border-top: 0;
+}
+@media screen and (max-width: 767px) {
+    .service {
+        display: none;
+    }
+
+    .table-body ul li:last-child {
+        display: none;
+    }
 }
 
 .table-body ul {
@@ -569,17 +597,26 @@ ul {
 
     section p {
         align-self: center;
+        color: black;
     }
 }
+
+
 /*######## FOOTER ######### */
 footer {
-    /* background-color: firebrick; */
     position: fixed;
     bottom: 0;
     padding: 20px 0;
     width: 100%;
     border-top: 1px solid black;
     
+}
+@media screen and (min-width: 768px) {
+    footer {
+        /* width: 100%; */
+        border-style: none;
+        position: absolute;
+    }
 }
 
 /* MOBILE */
@@ -588,16 +625,18 @@ footer {
     justify-content: space-around;
 }
 @media screen and (min-width: 768px) {
-    footer {
-        width: 100%;
-        border-style: none;
-    }
     .mobile-options {
         display: none;
     }
 }
 
 /* TABLET */
+.tablet-options {
+    /* background-color: green; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 
 @media screen and (max-width: 767px) {
     .tablet-options {
@@ -605,15 +644,8 @@ footer {
     }
 }
 
-.tablet-options {
-    /* background-color: green; */
-    width: 100%;
-    display: flex;
-    /* justify-content: space-between; */
-}
-
-.info {
-    margin-left: 72px;
+.info, .view-mode {
+    align-self: center;
 }
 
  .info ul {
@@ -640,11 +672,15 @@ footer {
 
 .view-mode {
     display: flex;
-    gap: 10px;
+    /* height: 10px; */
+    /* gap: 10px; */
    /* background-color: #ae7aff; */
 }
 
-
+.view-mode button {
+    height: 25px;
+    width: 25px;
+}
 /*######### ASIDE SECTION #########*/
 
 aside {
@@ -656,42 +692,138 @@ aside > img {
 }
 @media screen and (min-width: 768px) {
     aside {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width:20%;
+        display: block;
+        /* flex-direction: column;
+        align-items: center; */
+        width:10%;
         height:100%;
         background-color: black;
     }
-
     nav {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
 
-    nav img {
+    /* hide the useless icons */
+    .navigation li:not(:first-child) img:nth-child(2) {
+        display: none;
+    }
+    @media screen and (min-width: 1024px) {
+        .navigation li:not(:first-child) img:nth-child(2) {
+            display: inline;
+        }
+        .navigation li:not(:first-child) img:first-child {
+            display: none;
+        }
+    }
+
+
+    .navigation {
+        margin-top: 100px;
+        width: 100%;
+        height: 100%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        .navigation {
+            align-items: flex-start;
+        }
+    }
+    
+    .navigation li {
+        /* background-color: magenta; */
+        align-self: center;
+    }
+
+    .navigation li img {
         width: 20px;
     }
 
     .profiles {
+        margin-top: 30px;
+    }
+
+    .profiles ul {
+        width: 100%;
+        height: 100%;
+        /* background-color: pink;  */
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 25px;
-    }
-    .profiles img:not(:last-child) {
-        width: 25px;
+        gap:20px;
     }
 
-    .profiles img:last-child {
-        width: 15px;
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 29px;
     }
+    [alt='m-menu'] {
+        width: 20px;
+    }
+
+    [alt='d-logo'] {
+        display: none;
+    }
+    @media screen and (min-width: 1024px) {
+        [alt='m-menu'] {
+            display: none;
+        }
     
-    nav img:first-child {
-        margin: 30px 0;
-        width: 15px;
+        [alt='d-logo'] {
+            display: block;
+            width: 120px;
+        }
     }
+
+
+
+    nav li {
+        /* width: 100%; */
+        height: 100%;
+        /* background-color: magenta; */
+        padding: 11px 16px;
+    }
+    @media screen and (min-width: 1024px) {
+        nav li img{
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    aside li:first-child, aside span {
+        display: none;
+    }
+    @media screen and (min-width: 1024px) {
+        aside li:first-child {
+            display: block;
+            color: #FFFFFFBF;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        aside span {
+            display: inline;
+            color: white;
+        }
+
+        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    aside {
+        width: 30%;
+        align-items: flex-start;
+    }
+
+    li span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
 }
