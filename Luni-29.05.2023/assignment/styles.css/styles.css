@@ -761,7 +761,7 @@ aside > img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap:20px;
+        gap: 20px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -771,17 +771,29 @@ aside > img {
     }
     
     .navigation li {
+        width: 100%;
         /* background-color: magenta; */
+        margin-left: 37px;
         align-self: center;
     }
+    @media screen and (min-width: 1024px) {
+        .navigation li {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
 
+
+    /* .notification {
+        margin-right;
+    } */
     .navigation li img {
         width: 16px;
     }
 
     .profiles {
         margin-top: 30px;
-        margin-bottom: 1zaaaaaa  rfrr0px;
+        margin-bottom: 10px;
     }
     @media screen and (min-width: 1024px) {
         .profiles {
@@ -797,6 +809,11 @@ aside > img {
         flex-direction: column;
         align-items: center;
         gap:20px;
+    }
+
+    .profiles ul li {
+        width: 100%;
+        margin-left: 37px;
     }
 
     .menu {
@@ -828,7 +845,7 @@ aside > img {
         /* width: 100%; */
         height: 100%;
         /* background-color: magenta; */
-        padding: 11px 16px;
+        /* padding: 11px 16px; */
     }
     @media screen and (min-width: 1024px) {
         nav li img{
@@ -859,7 +876,13 @@ aside > img {
         justify-content: center;
         bottom: 20px;
         width: 100%;
+        margin-top: 300px;
         /* background-color: red; */
+    }
+    @media screen and (min-width: 1024px) {
+        .current-user {
+            margin-top: 200px;
+        }
     }
 
     .current-user span {
@@ -868,6 +891,7 @@ aside > img {
     @media screen and (min-width: 1024px) {
         .current-user span {
             display: inline;
+            margin-left: 10px;
         }
     }
 }
