@@ -1,10 +1,10 @@
 import logo from '../../logo.svg';
 import '../../App.css';
 
-export default function Image() {
+export default function Image({logoName, className, infos}) {
     return (
         <>
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={logoName} className={className} alt={infos} />
         </>
     );
 }

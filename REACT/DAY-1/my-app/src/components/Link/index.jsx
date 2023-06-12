@@ -1,13 +1,8 @@
 
-export default function Link () {
+export default function Link (props) {
     return (
         <>
-            <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
+            <a {...props}>
             Learn React
             </a>
         </>

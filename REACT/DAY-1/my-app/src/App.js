@@ -8,9 +8,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        < Image />
+        < Image logoName= {logo} className="App-logo" infos = "logo"/>
         <Paragraph />
-        <Link />
+        <Link className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"/>
       </header>
     </div>
   );
