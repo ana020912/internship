@@ -8,12 +8,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        < Image logoName= {logo} className="App-logo" infos = "logo"/>
+        <Image logoName={logo} className="App-logo" infos="logo"/>
         <Paragraph />
         <Link className="App-link"
             href="https://reactjs.org"
             target="_blank"
-            rel="noopener noreferrer"/>
+            rel="noopener noreferrer"/> 
+            {/* change the props name */}
       </header>
     </div>
   );
