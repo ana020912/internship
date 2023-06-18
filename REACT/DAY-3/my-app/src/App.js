@@ -11,7 +11,10 @@ import Posts from './components/Posts';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import ErrorPage from './routes/errorpage';
+import getData from './services/getData.service';
 
+
+const response = "";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,30 +23,17 @@ const router = createBrowserRouter([
   {
     path: "/users",
     element: <Users />,
-    loader: async (infos) => {
-      console.log(infos);
-      const data = await axios.get('https://jsonplaceholder.typicode.com/users?_start=0&_limit=10')  //extract in a service.js
-                                  .catch(error => console.log(error))
-      return data.data
-    }
+    loader: getData
   },
   {
     path: "/posts",
     element: <Posts />, 
-    loader:  async () => {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10')
-                                      .catch(error => console.log(error))
-        return response.data
-    }
+    loader: getData
   },
   {
     path: "/todos",
     element: <Todos />,
-    loader:  async () => {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/todos?_start=0&_limit=10')
-                                      .catch(error => console.log(error))
-        return response.data
-    }
+    loader:  getData
   },
   {
     path: "*",
