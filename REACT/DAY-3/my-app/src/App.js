@@ -17,6 +17,7 @@ import ErrorPage from './routes/errorpage';
 import getDataById from './services/getDataById.service';
 import getData from './services/getData.service';
 
+const response = "";
 const router = createBrowserRouter([
   {
     path: "/",
