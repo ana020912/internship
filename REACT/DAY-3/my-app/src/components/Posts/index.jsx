@@ -1,6 +1,6 @@
-import { useState, useEffect, useReducer } from "react";
-import axios from 'axios';
-import { useLoaderData, useLocation, useParams } from "react-router-dom";
+// import { useState, useEffect, useReducer } from "react";
+// import axios from 'axios';
+import { useLoaderData, useLocation, Link, Outlet } from "react-router-dom";
 
 
 // const initialState = {
@@ -45,9 +45,12 @@ function Posts() {
       <h1>Welcome to {location.pathname === '/posts'? "Posts" : ""}</h1>
       <ul>
         { postLoaderData && postLoaderData.map((elem) => ( 
-          <li key={elem.id}>{elem.title}</li> 
+          <li key={elem.id}><Link to = {`${elem.id}`} >{elem.title}</Link></li> 
         ))}
       </ul>
+      <div id = 'details'>
+        <Outlet />
+      </div>
     </>
   );
 }
