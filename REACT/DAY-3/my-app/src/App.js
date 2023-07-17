@@ -10,9 +10,12 @@ import Users from './components/Users';
 import Posts from './components/Posts';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import UserDetails from './components/UsersDetails';
+import TodoDetails from './components/TodosDetails';
+import PostDetails from './components/PostsDetails';
 import ErrorPage from './routes/errorpage';
+import getDataById from './services/getDataById.service';
 import getData from './services/getData.service';
-
 
 const response = "";
 const router = createBrowserRouter([
@@ -24,16 +27,46 @@ const router = createBrowserRouter([
     path: "/users",
     element: <Users />,
     loader: getData
+    ,
+    children: [
+      {
+        path: ":usersId",
+        element: <UserDetails />,
+        loader: getDataById
+      }
+    ]
   },
   {
     path: "/posts",
-    element: <Posts />, 
-    loader: getData
+    element: <Posts />,
+    loader: async () => {
+      const response = await axios.get('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10')
+        .catch(error => console.log(error))
+      return response.data
+    },
+    children: [
+      {
+        path: ":postId",
+        element: <PostDetails />,
+        loader: getDataById
+      }
+    ]
   },
   {
     path: "/todos",
     element: <Todos />,
-    loader:  getData
+    loader: async () => {
+      const response = await axios.get('https://jsonplaceholder.typicode.com/todos?_start=0&_limit=10')
+        .catch(error => console.log(error))
+      return response.data
+    },
+    children: [
+      {
+        path: "/todos/:todosId",
+        element: <TodoDetails />,
+        loader: getDataById
+      }
+    ]
   },
   {
     path: "*",
@@ -44,9 +77,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-        <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </>
-    
+
   );
 }
 

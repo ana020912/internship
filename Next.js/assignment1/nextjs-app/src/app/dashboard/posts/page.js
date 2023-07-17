@@ -1,7 +1,6 @@
 import Link from "next/link"
 
 export default function Post ({params}) {
-    console.log("slug:" + params.slug);
     return (
         <>
             <h1>Welcome to posts</h1>
