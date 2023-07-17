@@ -1,0 +1,15 @@
+.mainheader {
+    background-color: #EBF1F5;
+    padding: 16px 0;
+}
+
+.mainheader__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.profileoption {
+    transform: translateX(-35px);
+}

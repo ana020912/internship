@@ -1,0 +1,17 @@
+.socialMediaList {
+    display: flex;
+    margin-top: 10px;
+}
+
+.followTitle {
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    /* margin-bottom: 11px; */
+}
+
+.socialMediaDetails {
+    color: #8A9BA8;
+    font-size: 14px;
+    line-height: 16px;
+}

@@ -1,0 +1,16 @@
+.balance {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 32px;
+    color: #30404D;
+    font-weight: 600;
+    transform: translateX(-35px);
+    /* background-image: url('/shopping-cart.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center; */
+}
+
+.balance::before {
+    content: url('/shopping-cart.svg');
+    margin-right: 10px;
+}

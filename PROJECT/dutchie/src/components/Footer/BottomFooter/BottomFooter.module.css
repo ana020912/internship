@@ -1,0 +1,9 @@
+.bottomfooter {
+    background-color: #202B33;
+}
+
+.bottomfooter__container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}

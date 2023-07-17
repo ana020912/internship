@@ -1,0 +1,8 @@
+.rights {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #8A9BA8;
+    font-size: 14px;
+    line-height: 16px;
+}

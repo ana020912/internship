@@ -1,0 +1,17 @@
+.topFooter {
+    background-color: #30404D;
+    padding-bottom: 64px;
+}
+
+.lists__topFooter {
+    margin-bottom: 100px;
+    display: inline-flex;
+    gap: 108px;
+    position: relative;
+    top: 56px;
+}
+
+.newsletter_social {
+    display: flex;
+    gap: 138px;
+}
