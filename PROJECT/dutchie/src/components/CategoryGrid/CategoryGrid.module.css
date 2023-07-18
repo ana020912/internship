@@ -1,0 +1,13 @@
+.cardsLayout {
+    padding: 56px 98px;
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}
+
+.smallCardsLayout {
+    display: flex;
+    gap: 33px;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}

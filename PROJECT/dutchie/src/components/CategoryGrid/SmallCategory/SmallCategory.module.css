@@ -1,0 +1,19 @@
+.smallCard {
+    box-sizing: border-box;
+    padding: 24px 32px 35px 32px;
+    background-color: #EBF1F5;
+    max-width: 339px;
+    border-radius: 12px;
+}
+
+.content {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.btnBorder {
+    border-radius: 6px;
+}

@@ -1,0 +1,30 @@
+.heroHeader {
+    display: flex;
+    justify-content: space-around;
+}
+
+.heroHeaderBg {
+    background-color: #F5F8FA;
+}
+
+.strong {
+    color: #394B59;
+}
+
+.title {
+    color: #8A9BA8;
+    line-height: 50px;
+}
+
+.leftSide {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.rightSide {
+    padding: 90px 0;
+    margin: 0 auto;
+}

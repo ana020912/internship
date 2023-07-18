@@ -1,0 +1,40 @@
+import Image from 'next/image'
+import Button from '../Button'
+import Title from '../Title'
+import styles from './HeroHeader.module.css'
+
+export default function HeroHeader() {
+    return (
+        <section className={styles.heroHeaderBg}>
+            <div className='container'>
+                <div className={styles.heroHeader}>
+                    <div className={styles.leftSide}>
+                        <Title level='h1' className={styles.title}>
+                            Your <span className={styles.strong}>dutch store,</span><br/>
+                            always close.
+                        </Title>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                        <Button
+                            imgposition='left'
+                            text='Check out the deals'
+                            imgsrc='/percent.svg'
+                            className='btnLarge btnDark btnRadius textWhite'
+                        />
+                    </div>
+
+                    <div className={styles.rightSide}>
+                        <Image
+                            src='/products.png'
+                            width={532}
+                            height={285}
+                        />
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    )
+}

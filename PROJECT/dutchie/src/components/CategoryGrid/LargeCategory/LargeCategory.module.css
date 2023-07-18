@@ -1,0 +1,19 @@
+.largeCategory {
+    box-sizing: border-box;
+    background-color: #8A9BA8;
+    min-width: 338px;
+    border-radius: 12px;
+    max-height: 384px;
+    padding: 44px 32px;
+}
+
+.content {
+    width: 70%;
+}
+
+.info {
+    margin-bottom: 16px;
+    color: #EBF1F5;
+    font-size: 20px;
+    line-height: 32px;
+}
