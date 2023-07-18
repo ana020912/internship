@@ -10,8 +10,8 @@ export default function CategoryGrid() {
                     <LargeCategory info='Lorem ipsum dolor sit amet, consectetur' />
                     <div className={styles.smallCardsLayout}>
                         <SmallCategory info='Lorem ipsum dolor sit amet, consectetur' btnStyle='dark' />
-                        <SmallCategory info='Lorem ipsum dolor sit amet, consectetur' btnStyle='dark' />
                         <SmallCategory info='Lorem ipsum dolor sit amet, consectetur' btnStyle='light' />
+                        <SmallCategory info='Lorem ipsum dolor sit amet, consectetur' btnStyle='dark' />
                         <SmallCategory info='Lorem ipsum dolor sit amet, consectetur' btnStyle='light' />
                     </div>
                 </div>

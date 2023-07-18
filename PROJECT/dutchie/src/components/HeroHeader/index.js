@@ -2,12 +2,13 @@ import Image from 'next/image'
 import Button from '../Button'
 import Title from '../Title'
 import styles from './HeroHeader.module.css'
+import GridHalf from '../GridHalf'
 
 export default function HeroHeader() {
     return (
         <section className={styles.heroHeaderBg}>
             <div className='container'>
-                <div className={styles.heroHeader}>
+                <GridHalf>
                     <div className={styles.leftSide}>
                         <Title level='h1' className={styles.title}>
                             Your <span className={styles.strong}>dutch store,</span><br/>
@@ -31,8 +32,7 @@ export default function HeroHeader() {
                             height={285}
                         />
                     </div>
-                </div>
-
+                </GridHalf>
             </div>
 
         </section>

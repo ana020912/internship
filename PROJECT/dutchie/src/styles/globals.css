@@ -82,6 +82,8 @@ a {
     line-height: 16px;
 }
 
+/* Title styles */
+
 h1 {
     font-size: 48px;
     font-weight: 600;
@@ -100,6 +102,7 @@ h5 {
     font-weight: 400;
 }
 
+/* Buttons styles */
 .btnLarge {
     padding: 12px 23px;
     font-size: 16px;
@@ -134,6 +137,8 @@ h5 {
     font-size: 20px;
     padding: 0;
   }
+
+  /* Text colors */
   
   .textBlack {
     color: #30404d;
@@ -141,5 +146,21 @@ h5 {
   .textWhite {
     color: #fff;
   }
+  .textGrey {
+    color: #8A9BA8;
+  }
   
- 
+ .gridHalf {
+    display: flex;
+    justify-content: space-around;
+    gap: 26px;
+ }
+
+ /* Basket */
+.basketDark {
+  background-color: #758796;
+}
+
+.basketLight {
+  background-color: #EBF1F5;
+}

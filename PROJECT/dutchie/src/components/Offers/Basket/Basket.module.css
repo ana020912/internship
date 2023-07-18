@@ -1,0 +1,18 @@
+.products {
+    border-radius: 12px;
+    padding: 21px;
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.productsInfo {
+    text-align: center;
+    font-size: 16px;
+    color: #758796;
+}
+
+.price {
+    color: #394B59;
+    font-weight: bold;
+}
