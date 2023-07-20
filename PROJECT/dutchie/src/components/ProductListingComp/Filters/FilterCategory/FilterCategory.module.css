@@ -1,0 +1,17 @@
+.filterCategory {
+    max-width: 198px;
+    /* background-color: pink; */
+    background-repeat: no-repeat;
+    background-position: right;
+    border-bottom: 1px solid #E1E8ED;
+    margin-bottom: 10px;;
+    padding-bottom: 10px;
+}
+
+.filterCategory__downarrow {
+    background-image: url('../../../../../public/downarrow-dark.svg');
+}
+
+.filterCategory__uparrow {
+    background-image: url('../../../../../public/uparrow-dark.svg');
+}

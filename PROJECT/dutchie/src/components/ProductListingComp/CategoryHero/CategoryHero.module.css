@@ -1,0 +1,10 @@
+.categoryHero {
+    background-image: url('../../../../public/img-icon.svg');
+    background-repeat: no-repeat;
+    background-position: 95% 40px;
+}
+
+.itemsInfoCard {
+    margin-top: 93px;
+    padding-bottom: 31px;
+}

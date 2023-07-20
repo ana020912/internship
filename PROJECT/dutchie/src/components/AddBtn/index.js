@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import styles from './AddBtn.module.css'
 
-export default function AddBtn({imgsrc, className}) {
+export default function AddBtn({imgsrc, bgColor}) {
     return (
-        <button className={`btnRemoveBorder ${styles.addBtn}`}>
+        <button className={`btnRemoveBorder ${styles.addBtn} ${bgColor}`}>
             <Image 
                 src={imgsrc}
-                className={className}
+                // className={className}
                 width={16}
                 height={16}
             />    

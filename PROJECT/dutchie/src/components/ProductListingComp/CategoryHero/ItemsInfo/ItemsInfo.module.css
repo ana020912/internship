@@ -1,0 +1,22 @@
+.titleStyle {
+    color: #A7B6C2;
+}
+
+.itemsInfo {
+    background-color: white;
+    border: 1px solid #E1E8ED;
+    border-radius: 4px;
+    padding: 24px 30px;
+    max-width: 432px;
+}
+
+.boldText {
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 80%;
+}

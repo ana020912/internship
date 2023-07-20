@@ -13,6 +13,7 @@ export default function Basket({basketInfo, price, imgsrc, btnImg, bgColor }) {
                 />
                 <AddBtn
                     imgsrc='/plus-icon-dark.svg'
+                    bgColor='btnWhite'
                 />
             </div>
             <p className={styles.productsInfo}>{basketInfo} | <span className={styles.price}>{price}</span> </p>

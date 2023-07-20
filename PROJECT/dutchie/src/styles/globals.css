@@ -102,6 +102,10 @@ h5 {
     font-weight: 400;
 }
 
+h6 {
+  font-size: 16px;
+}
+
 /* Buttons styles */
 .btnLarge {
     padding: 12px 23px;
@@ -119,6 +123,10 @@ h5 {
   
   .btnLight {
     background-color: #e5eaee;
+  }
+
+  .btnWhite {
+    background-color: white;
   }
   
   .btnTransparent {
@@ -156,6 +164,12 @@ h5 {
     gap: 26px;
  }
 
+ /* Text font */
+
+ .boldText {
+  font-weight: 600;
+ }
+
  /* Basket */
 .basketDark {
   background-color: #758796;
@@ -163,4 +177,29 @@ h5 {
 
 .basketLight {
   background-color: #EBF1F5;
+}
+
+/* display options */
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+/* Product-listing options */
+
+.option {
+  background-color: #F5F8FA;
+  border: 1px solid #A7B6C2;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 400;
 }

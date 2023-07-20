@@ -1,0 +1,9 @@
+.discountPrice {
+    font-size: 14px;
+    line-height: 14px;
+    width: fit-content;
+    color: white;
+    background-color: #8A9BA8;
+    border-radius: 4px;
+    padding: 4px 8px;
+}

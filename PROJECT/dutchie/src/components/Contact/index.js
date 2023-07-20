@@ -1,6 +1,8 @@
 import GridHalf from '../GridHalf'
 import Title from '../Title'
 import styles from './Contact.module.css'
+import FAQSearch from './FAQSearch'
+import Formular from './Formular'
 
 export default function Contact() {
     return (
@@ -12,13 +14,8 @@ export default function Contact() {
                 </Title>
 
                 <GridHalf>
-                    <div className={styles.leftSide}>
-                        
-                    </div>
-
-                    <div className={styles.rightSide}>
-
-                    </div>
+                    <Formular message='We usually respond within 1 working day 😉'/>
+                    <FAQSearch />
                 </GridHalf>
             </div>
         </section>
