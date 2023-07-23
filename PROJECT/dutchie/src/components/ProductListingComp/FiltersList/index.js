@@ -4,7 +4,8 @@ import styles from './Filters.module.css'
 
 export default function FiltersList() {
     return (
-        <section>
+        <>
+        <section className={styles.filtersList}>
             <FilterCategory
                 name='Title'
             />
@@ -21,5 +22,7 @@ export default function FiltersList() {
                 name='Title'
             />
         </section>
+        </>
+        
     )
 }

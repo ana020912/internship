@@ -16,14 +16,14 @@ export default function ItemCard({discount, itemName, oldPrice, newPrice, moneyS
                     width={56}
                     height={56}   
                 />
-                <DiscountPrice className={styles.discountPrice} price='30'/>
+                <DiscountPrice className={styles.discountPrice} price={discount}/>
             </div>
             <div className={styles.itemDetails}>
                 <Title className={`textGrey ${styles.title}`} level='h6'>{itemName}</Title>
                 <div className={styles.btnPriceLayout}>
                     <div className={styles.price}>
-                       <OldPrice price='12.90'/>
-                       <NewPrice moneySymbol='$' price='8.90' />
+                       <OldPrice price={oldPrice}/>
+                       <NewPrice moneySymbol='$' price={newPrice} />
                     </div>
 
                     <AddBtn

@@ -1,6 +1,5 @@
-import Button from '@/components/Button'
 import styles from './AppliedFilters.module.css'
-import FilterOption from '../Filters/AvailableOptions/FilterOption'
+import FilterOption from '../FiltersList/AvailableOptions/FilterOption'
 
 export default function AppliedFilters() {
     return (
