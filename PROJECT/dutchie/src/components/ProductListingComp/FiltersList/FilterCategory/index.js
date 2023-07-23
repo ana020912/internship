@@ -8,13 +8,6 @@ export default function FilterCategory({ name }) {
     const [arrowState, setArrowState] = useState(false);
     function changeArrowState() {
         setArrowState(!arrowState);
-        if (arrowState === false) {
-            arrow = styles.filterCategory__downarrow
-        
-        } else {
-            arrow = styles.filterCategory__downarrow
-          ;
-        }
     }
     return (
         <div>

@@ -2,3 +2,8 @@
     color: #8A9BA8;
     font-size: 14px;
 }
+
+.filterOptions {
+    display: flex;
+    gap: 16px;
+}

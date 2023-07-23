@@ -1,6 +1,7 @@
 .filterCategory {
-    max-width: 198px;
-    /* background-color: pink; */
+    min-width:200px;
+    display: flex;
+    justify-content: space-between;
     background-repeat: no-repeat;
     background-position: right;
     border-bottom: 1px solid #E1E8ED;

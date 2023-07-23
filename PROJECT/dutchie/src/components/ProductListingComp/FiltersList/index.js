@@ -5,7 +5,7 @@ import styles from './Filters.module.css'
 export default function FiltersList() {
     return (
         <>
-        <section className={styles.filtersList}>
+        <section>
             <FilterCategory
                 name='Title'
             />

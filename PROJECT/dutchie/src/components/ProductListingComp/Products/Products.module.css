@@ -1,17 +1,25 @@
 .products {
-    /* display: inline-flex; */
-    /* justify-content: space-around; */
+    display: flex;
+    gap: 50px;
 }
 
-.filtersList {
-    background-color: green;
-}
+
 
 .itemCards {
-    /* margin-left: 50px; */
-    background-color: pink;
     gap: 33px;
-    width: 60%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.rightSide {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.filtersLayout {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
 }

@@ -5,7 +5,7 @@ export default function AppliedFilters() {
     return (
         <section>
             <p className={styles.title}>Applied filters:</p>
-            <div>
+            <div className={styles.filterOptions}>
                 <FilterOption 
                     name='🥖 Option 1'
                     imgposition='right'

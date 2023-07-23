@@ -2,9 +2,12 @@
     /* box-sizing: border-box; */
     border: 1px solid #E1E8ED;
     border-radius: 8px;
-    max-width: 235px;
+    width: 25%;
+    /* max-width: 235px; */
     padding: 20px 15px;
     margin-left: 10px;
+    /* flex-grow: 1; */
+
 }
 
 .itemImage {

@@ -10,10 +10,7 @@ export default function Checkout() {
     return (
         <Layout>
             <CategoryHero />
-            {/* <ItemCard itemName='Berberana Red Dragon Tempranillo'/> */}
-            {/* <Breadcrumbs /> */}
-            {/* <FiltersList />
-            <AppliedFilters /> */}
+            <Breadcrumbs />
             <Products />
         </Layout>
           
