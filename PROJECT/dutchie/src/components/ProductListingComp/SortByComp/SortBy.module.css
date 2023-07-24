@@ -1,4 +1,10 @@
 .sortBy {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.sortByText {
     min-width: 65px;
     transform: translateY(40px);
     color: #30404D;
@@ -7,3 +13,8 @@
     background-repeat: no-repeat;
     background-position: right;
 }
+
+.criteriaStyle {
+    position: absolute;
+}
+

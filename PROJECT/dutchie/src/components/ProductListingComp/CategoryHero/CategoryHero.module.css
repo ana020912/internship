@@ -2,10 +2,10 @@
     background-color: #f5f8fa;
     background-image: url('../../../../public/img-icon.svg');
     background-repeat: no-repeat;
-    background-position: 95% 40px;
+    background-position: 95% 150px;
 }
 
 .itemsInfoCard {
-    margin-top: 93px;
+    padding-top: 93px;
     padding-bottom: 31px;
 }
