@@ -1,0 +1,8 @@
+.heroLayout {
+    min-height: 188px;
+    background-color: #f5f8fa;
+    background-image: url('../../../public/img-icon.svg');
+    background-repeat: no-repeat;
+}
+
+

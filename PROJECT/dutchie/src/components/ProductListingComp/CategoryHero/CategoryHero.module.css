@@ -1,11 +1,8 @@
-.categoryHero {
-    background-color: #f5f8fa;
-    background-image: url('../../../../public/img-icon.svg');
-    background-repeat: no-repeat;
-    background-position: 95% 150px;
-}
-
 .itemsInfoCard {
     padding-top: 93px;
     padding-bottom: 31px;
+}
+
+.bgPoz {
+    background-position: 95% 150px;
 }
