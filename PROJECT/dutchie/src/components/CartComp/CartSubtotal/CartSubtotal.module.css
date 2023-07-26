@@ -1,9 +1,39 @@
 .cartSubtotal {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     border-radius: 16px 16px 0 0;
+    border: 1px solid #d8e1e8;
+    padding: 0 40px;
+    width: fit-content;
+    margin: -30px auto;
+    /* background-color: #ebf1f5; */
+    /* z-index: -99; */
 }
 
 .upperLayout {
     display: flex;
+    padding: 28px 40px;
+    background-color: white;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    border-bottom: 1px solid #d8e1e8;
+    justify-content: space-between;
+}
+
+.lowerLayout {
+    width: 100%;
+    position: relative;
+    z-index: -9;
+    background-color: #ebf1f5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* padding: 20px; */
+}
+
+.lastProduct {
+    position: relative;
+    z-index: -9;
 }

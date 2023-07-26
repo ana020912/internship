@@ -3,7 +3,7 @@ import styles from './SortBy.module.css'
 import Criteria from '../Criteria';
 
 export default function SortBy() {
-    const [btnState, setBtnState] = useState(true);
+    const [btnState, setBtnState] = useState(false);
 
     function changeBtn() {
         setBtnState(!btnState);

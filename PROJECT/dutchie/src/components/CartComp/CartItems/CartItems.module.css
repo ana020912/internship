@@ -1,3 +1,11 @@
+.cardItems {
+    width: 790px;
+    margin: 80px auto;
+    /* background-color: pink; */
+   
+    
+}
+
 .title {
     color: #394B59;
     display: flex;
@@ -11,8 +19,8 @@
 
 .upperLayout {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btnStyle {
@@ -21,4 +29,10 @@
     font-weight: 400;
     border-radius: 6px;
     padding: 10px 20px;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
