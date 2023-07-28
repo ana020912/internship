@@ -24,6 +24,7 @@ export default function Products() {
                             {
                                 partyItems.map(item => (
                                     <ItemCard
+                                        key={item.id}
                                         discount={item.hasOwnProperty('discount') ? item.discount : -1}
                                         itemName={item.name}
                                         oldPrice={item.price}

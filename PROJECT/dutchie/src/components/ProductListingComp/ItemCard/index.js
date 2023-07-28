@@ -32,7 +32,7 @@ export default function ItemCard({discount, itemName, oldPrice, newPrice, moneyS
                        <NewPrice moneySymbol='$' price={newPrice} />
                     </div>
 
-                    <AddBtn
+                    <AddBtn 
                         imgsrc='/plus-icon-light.svg'
                         bgColor='btnDark'
                     />
