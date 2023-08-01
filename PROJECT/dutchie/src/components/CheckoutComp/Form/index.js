@@ -9,23 +9,10 @@ import Title from '@/components/Title'
 
 
 export default function Form() {
-    const [isActive, setIsActive] = useState({display: 2, isActive: true});
+    // const [isActive, setIsActive] = useState({display: 2, isActive: true});
+    const [isActive, setIsActive] = useState(2);
 
-    function changeState1() {
-        setIsActive({
-            display: 1,
-            isActive: !isActive
-        });
 
-    }
-
-    function changeState2() {
-        setIsActive({
-            display: 2,
-            isActive: !isActive
-        });
-
-    }
     return (
         <section className={styles.formPos}>
             <Title level='h5'>Fill it in and you're good to go!</Title>
@@ -50,12 +37,12 @@ export default function Form() {
                 </div>
 
                 <div className={styles.tabs}>
-                    <Tab handleClick={changeState1} isActive={!isActive} text='Checkout as guest' />
-                    <Tab handleClick={changeState2} isActive={isActive} text='Sign into your account' />
+                    <button onClick={() => setIsActive(1)} className={isActive === 1 ? styles.activeTab : styles.tab}>Checkout as guest</button>
+                    <button onClick={() => setIsActive(2)} className={isActive === 2  ? styles.activeTab : styles.tab} >Sign into your account</button>
                 </div>
 
-                {isActive.display === 1 && <SignInForm />}
-                {isActive.display === 2 && <GuestForm />}
+                {isActive === 1 && <SignInForm />}
+                {isActive === 2 && <GuestForm />}
 
             </div>
         </section>

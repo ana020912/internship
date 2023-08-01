@@ -37,3 +37,26 @@
     /* background-color: green; */
     /* justify-content: space-around; */
 }
+
+.tab {
+    padding: 24px 64px;
+    text-align: center;
+    width: 50%;
+    border-bottom: 2px solid #d8e1e8;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #394B59;
+}
+
+.activeTab  {
+    padding: 24px 64px;
+    text-align: center;
+    width: 50%;
+    border-bottom: 2px solid #394B59;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #394B59;
+    background-color: #f5f8fa;
+}
