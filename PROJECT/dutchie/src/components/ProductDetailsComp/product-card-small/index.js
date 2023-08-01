@@ -1,7 +1,8 @@
 import Button from '@/components/Button';
 import styles from './product-card-small.module.css';
-// import ButtonAdd from '@/components/buttons/button-add';
+
 import Image from 'next/image';
+import AddBtn from '@/components/AddBtn';
 
 export default function ProductCardSmall({price}) {
     return (
@@ -11,7 +12,7 @@ export default function ProductCardSmall({price}) {
             </div>
             <div className={styles.card_bottom}>
                 <span className={styles.price}>{price}</span>
-                <Button btncolor="dark" />
+                <AddBtn width='12' height='12' />
             </div>
         </div>
     )

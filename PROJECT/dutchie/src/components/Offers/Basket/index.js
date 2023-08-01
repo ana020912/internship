@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './Basket.module.css'
-import AddBtn from '@/components/AddBtn'
+import AddBtn from '@/components/BtnStyle'
 
 export default function Basket({basketInfo, price, imgsrc, btnImg, bgColor }) {
     return (

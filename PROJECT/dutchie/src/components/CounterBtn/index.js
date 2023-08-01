@@ -3,13 +3,13 @@ import BtnStyle from "../BtnStyle";
 
 import React from 'react'
 
-export default function AddBtn({width, height}) {
+export default function CounterBtn({imgsrc}) {
   return (
     <BtnStyle className='btnRemoveBorder' bgColor='btnDark'>
-        <Image 
-            src='/plus-icon-light.svg'
-            width={width}
-            height={height}
+        <Image
+            src={imgsrc}
+            width={10}
+            height={10}
         />
     </BtnStyle>
   )

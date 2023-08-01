@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import styles from './CartProduct.module.css'
-import AddBtn from '@/components/AddBtn'
+import AddBtn from '@/components/BtnStyle'
 import NewPrice from '@/components/ProductListingComp/NewPrice'
 import { useState } from 'react'
+import DeleteBtn from '@/components/DeleteBtn'
+import CounterBtn from '@/components/CounterBtn'
 
 export default function CartProduct({ imgsrc, background, name }) {
 
@@ -17,7 +19,7 @@ export default function CartProduct({ imgsrc, background, name }) {
     }
 
     return (
-        <div className={`background ${styles.cartProduct} `}>
+        <div className={`${background} ${styles.cartProduct} `}>
             <div className={styles.leftSide}>
                 <Image
                     src={imgsrc}
@@ -27,14 +29,14 @@ export default function CartProduct({ imgsrc, background, name }) {
                 <div className={styles.productDetails}>
                     <p className={styles.name}>{name}</p>
                     <div className={styles.counter}>
-                        <AddBtn
+                        <CounterBtn
                             imgsrc='/plus-icon-light.svg'
-                            bgColor='btnDark'
+                           
                         />
                         <span>1</span>x
-                        <AddBtn
+                        <CounterBtn
                             imgsrc='/minus-icon-light.svg'
-                            bgColor='btnDark'
+                            
                         />
                     </div>
                 </div>
@@ -42,8 +44,8 @@ export default function CartProduct({ imgsrc, background, name }) {
 
             <div className={styles.rightSide}>
                 <div>
-                    <AddBtn
-                        imgsrc={'/delete-icon-dark.svg'}
+                    <DeleteBtn
+                        imgsrc='/delete-icon-dark.svg'
 
                     />
                 </div>

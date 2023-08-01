@@ -3,8 +3,8 @@ import styles from './ItemCard.module.css'
 import Title from '@/components/Title'
 import OldPrice from '../OldPrice'
 import NewPrice from '../NewPrice'
-import AddBtn from '@/components/AddBtn'
 import DiscountPrice from '../DiscountPrice'
+import AddBtn from '@/components/AddBtn'
 
 export default function ItemCard({discount, itemName, oldPrice, newPrice, moneySymbol}) {
     return (
@@ -32,7 +32,7 @@ export default function ItemCard({discount, itemName, oldPrice, newPrice, moneyS
                        <NewPrice moneySymbol='$' price={newPrice} />
                     </div>
 
-                    <AddBtn 
+                    <AddBtn width='16' height='16'
                         imgsrc='/plus-icon-light.svg'
                         bgColor='btnDark'
                     />

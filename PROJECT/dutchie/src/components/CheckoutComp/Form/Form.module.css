@@ -1,0 +1,39 @@
+.formPos {
+    margin-top: -40px;
+}
+
+.form {
+    background-color: white;
+    border: 1px solid #D8E1E8;
+    width: fit-content;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+}
+
+
+.stepper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #D8E1E8;
+}
+
+
+.stepperIndex {
+     color: #8A9BA8;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 24px 42px;
+}
+
+/* tabs */
+.tabs {
+    display: flex;
+    /* background-color: green; */
+    /* justify-content: space-around; */
+}

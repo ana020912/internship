@@ -194,6 +194,12 @@ h6 {
   display: flex;
 }
 
+/* text align options */
+
+.textCenter {
+  text-align: center;
+}
+
 /* Product-listing options */
 
 .option {
@@ -272,3 +278,21 @@ h6 {
   height: 100%;
   object-fit: cover;
 }
+
+/* HERO HEADER */
+
+.heroBgPoz {
+    background-position: 90% 50px;
+  }
+  
+  .goBack {
+      color: #8A9BA8;
+      display: flex;
+      gap: 6px;
+      position: relative;
+      top: 32px;
+      left: 34px;
+  }
+  .goBack::before {
+      content: url('../../public/leftarrow-dark.svg');
+  }
