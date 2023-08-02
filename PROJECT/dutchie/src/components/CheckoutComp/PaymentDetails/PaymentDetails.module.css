@@ -1,0 +1,6 @@
+.titleImage::before {
+    content: url('../../../../public/card-dark.svg');
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}

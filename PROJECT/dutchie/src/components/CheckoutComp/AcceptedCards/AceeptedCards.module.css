@@ -1,0 +1,11 @@
+.acceptedCards {
+    display: flex;
+    justify-content: space-between;
+    color: #98a8b3;
+    font-size: 16px;
+}
+
+.cards {
+    display: flex;
+    gap: 4px;
+}

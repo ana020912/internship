@@ -1,0 +1,33 @@
+.deliveryDetails {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.separator {
+    width: 328px;
+    border: 1px solid #D8E1E8;
+}
+
+.titleImage {
+    margin-bottom: 40px;
+}
+.titleImage::before {
+    content: url('../../../../public/truck-dark.svg');
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.deliveryCards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputField {
+    width: 328px;
+    height: 48px;
+}

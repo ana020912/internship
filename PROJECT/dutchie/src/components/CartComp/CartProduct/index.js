@@ -6,7 +6,7 @@ import { useState } from 'react'
 import DeleteBtn from '@/components/DeleteBtn'
 import CounterBtn from '@/components/CounterBtn'
 
-export default function CartProduct({ imgsrc, background, name }) {
+export default function CartProduct({ imgsrc, background, name, className }) {
 
     const [counter, setCounter] = useState(1);
 
@@ -19,13 +19,13 @@ export default function CartProduct({ imgsrc, background, name }) {
     }
 
     return (
-        <div className={`${background} ${styles.cartProduct} `}>
+        <div className={`${background} ${styles.cartProduct} ${className} `}>
             <div className={styles.leftSide}>
-                <Image
+                {imgsrc && <Image
                     src={imgsrc}
                     width={88}
                     height={88}
-                />
+                />}
                 <div className={styles.productDetails}>
                     <p className={styles.name}>{name}</p>
                     <div className={styles.counter}>
