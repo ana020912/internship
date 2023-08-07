@@ -16,19 +16,23 @@ export default function CartSubtotal() {
 
             <div className={styles.lowerLayout}>
                 <CartProduct
+                    imgsrc='/img-item-icon.svg'
                     background='btnTransparent'
                     name='Berberana Red Dragon Tempranillo'
                 />
                 <CartProduct
+                    imgsrc='/img-item-icon.svg'
                     background='btnTransparent'
                     name='Berberana Red Dragon Tempranillo'
                 />
                 <CartProduct
+                    imgsrc='/img-item-icon.svg'
                     background='btnTransparent'
                     name='Berberana Red Dragon Tempranillo'
                 />
                 <div className={styles.lastProduct}>
                     <CartProduct
+                        imgsrc='/img-item-icon.svg'
                         background='btnTransparent'
                         name='Berberana Red Dragon Tempranillo'
                     />

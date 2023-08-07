@@ -1,15 +1,11 @@
 .cardItems {
     width: 790px;
-    margin: 80px auto;
-    /* background-color: pink; */
-   
-    
+    margin: 80px auto;   
 }
 
 .title {
     color: #394B59;
     display: flex;
-    /* font-weight: 600; */
     gap: 16px;
 }
 
@@ -20,7 +16,7 @@
 .upperLayout {
     display: flex;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .btnStyle {

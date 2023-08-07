@@ -14,10 +14,6 @@ export default function SignIn() {
         <Link href='/product-details'><Title level='h6' className='goBack' >Continue shopping</Title></Link>
       </HeroLayout>
 
-      {/* <main className={styles.mainLayout}>
-        <Form />
-        <CheckoutCart />
-      </main> */}
       <CheckoutLayout>
         <Form />
       </CheckoutLayout>

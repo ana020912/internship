@@ -12,7 +12,6 @@
     border-radius: 16px 16px 0 0;
     display: flex;
     flex-direction: column;
-    /* background-color: pink; */
 }
 
 
@@ -32,4 +31,8 @@
     gap: 8px;
     text-decoration: none;
     padding: 24px 42px;
+}
+
+.linkStyle {
+    color: #8A9BA8;
 }
