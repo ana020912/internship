@@ -11,7 +11,7 @@ export default function SignIn() {
   return (
     <Layout>
       <HeroLayout bgPoz='heroBgPoz'>
-        <Link href='/product-details'><Title level='h6' className='goBack' >Continue shopping</Title></Link>
+        <Link href='/product-listing'><Title level='h6' className='goBack' >Continue shopping</Title></Link>
       </HeroLayout>
 
       <CheckoutLayout>

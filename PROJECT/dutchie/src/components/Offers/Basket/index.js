@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './Basket.module.css'
 import AddBtn from '@/components/BtnStyle'
+import BtnStyle from '@/components/BtnStyle'
 
 export default function Basket({basketInfo, price, imgsrc, btnImg, bgColor }) {
     return (
@@ -11,10 +12,13 @@ export default function Basket({basketInfo, price, imgsrc, btnImg, bgColor }) {
                     width={230}
                     height={132}
                 />
-                <AddBtn
-                    imgsrc='/plus-icon-dark.svg'
-                    bgColor='btnWhite'
-                />
+                <BtnStyle className='btnRemoveBorder' bgColor='btnWhite'>
+                    <Image
+                        src='/plus-icon-dark.svg'
+                        width={16}
+                        height={16}
+                    />
+                </BtnStyle>
             </div>
             <p className={styles.productsInfo}>{basketInfo} | <span className={styles.price}>{price}</span> </p>
         </div>

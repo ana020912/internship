@@ -13,17 +13,17 @@ export default function CheckoutDetailsLayout({ children }) {
                 <div className={styles.stepper}>
                     <div className={styles.stepperIndex}>
                         <StepperIndex bgColor='btnLight' index='1' />
-                        <Link className={styles.linkStyle} href='#'>Personal Details</Link>
+                        <Link className={styles.linkStyle} href='/checkout/SignIn'>Personal Details</Link>
                     </div>
                     -
                     <div className={styles.stepperIndex}>
                         <StepperIndex bgColor='btnLight' index='2' />
-                        <Link className={styles.linkStyle} href='#'>Delivery Details</Link>
+                        <Link className={styles.linkStyle} href='/checkout/DeliveryMethod'>Delivery Details</Link>
                     </div>
                     -
                     <div className={styles.stepperIndex}>
                         <StepperIndex bgColor='btnLight' index='3' />
-                        <Link className={styles.linkStyle} href='#'>Payment</Link>
+                        <Link className={styles.linkStyle} href='/checkout/PaymentMethod'>Payment</Link>
                     </div>
 
                 </div>

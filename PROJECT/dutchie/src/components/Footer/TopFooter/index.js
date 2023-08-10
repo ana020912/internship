@@ -1,7 +1,7 @@
 import Newsletter from '@/components/Newsletter'
-import InfoList from '../../InfoList'
 import styles from './TopFooter.module.css'
 import SocialMediaList from '../SocialMediaList'
+import InfoList from '@/components/InfoList'
 
 
 export default function TopFooter() {

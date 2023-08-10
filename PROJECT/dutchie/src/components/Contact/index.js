@@ -6,14 +6,14 @@ import Formular from './Formular'
 
 export default function Contact() {
     return (
-        <section>
+        <section className={styles.contact}>
             <div className='container'>
                 <Title level="h2">Any questions? Just ask.</Title>
                 <Title level="h5" className='textGrey'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </Title>
 
-                <GridHalf>
+                <GridHalf className={styles.forms}>
                     <Formular message='We usually respond within 1 working day 😉'/>
                     <FAQSearch />
                 </GridHalf>

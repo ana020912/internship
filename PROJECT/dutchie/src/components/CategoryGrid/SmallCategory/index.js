@@ -12,7 +12,7 @@ export default function SmallCategory({ info, btnStyle }) {
                             imgsrc='/arrow-right.svg'
                             imgposition='right'
                             className= {`btnRegular btnDark btnRemoveBorder textWhite ${styles.btnBorder}`}
-                            text="from 8.90€"
+                            text="Check it out"
                         />
                     ) : (
                         <Button

@@ -1,12 +1,9 @@
 .itemCard {
-    /* box-sizing: border-box; */
     border: 1px solid #E1E8ED;
     border-radius: 8px;
-    width: 25%;
-    /* max-width: 235px; */
+    width: 190px;
     padding: 20px 15px;
     margin-left: 10px;
-    /* flex-grow: 1; */
 
 }
 
@@ -19,6 +16,7 @@
 }
 
 .image {
+    width: 100px;
     position: relative;
     top: 50%;
     left: 50%;

@@ -5,9 +5,6 @@ import Layout from '@/components/Layout'
 import Title from '@/components/Title'
 import Link from 'next/link'
 import React from 'react'
-import styles from './PaymentMethod.module.css'
-import PaymentCard from '@/components/CheckoutComp/PaymentCard'
-import AcceptedCards from '@/components/CheckoutComp/AcceptedCards'
 import PaymentDetails from '@/components/CheckoutComp/PaymentDetails'
 export default function PaymentMethod() {
   return (

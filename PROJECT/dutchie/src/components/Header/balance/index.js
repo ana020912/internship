@@ -3,7 +3,7 @@ import styles from './Balance.module.css'
 
 export default function Balance({currentSold}) {
     return (
-        <Link href='#' className={styles.balance}>
+        <Link href='/cart' className={styles.balance}>
             {currentSold}
        </Link>
        );
